@@ -1,4 +1,4 @@
-from mygpiozero import LED
+from pelerine import LED
 from time import sleep
 
 myled1 = LED(1)
