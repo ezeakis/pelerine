@@ -11,3 +11,29 @@ class LED():
         self.led.value = True
     def off(self):
         self.led.value = False
+    def blink(self):
+        pass
+
+class Button():
+    def __init__(self):
+        pass
+
+class RGB_LED():
+    def __init__(self):
+        pass   
+    
+class Servo():
+    def __init__(self):
+        pass    
+    
+class Distance_Sensor():
+    def __init__(self):
+        pass   
+    
+class Gas_Sensor():
+    def __init__(self):
+        pass    
+    
+class Buzzer():
+    def __init__(self):
+        pass    
