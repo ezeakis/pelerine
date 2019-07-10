@@ -1,5 +1,6 @@
 import board
 import digitalio
+import time
 
 mymapping = [board.A0, board.D2]
 
@@ -11,8 +12,13 @@ class LED():
         self.led.value = True
     def off(self):
         self.led.value = False
+    #try    
     def blink(self):
-        pass
+        while True:
+            self.on()
+            time.sleep()
+            self.off()
+            time.sleep()
 
 class Button():
     def __init__(self):
