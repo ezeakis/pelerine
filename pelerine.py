@@ -2,6 +2,7 @@ import board
 import digitalio
 import time
 
+#only for pins 1 and 2 at the moment
 mymapping = [board.A0, board.D2]
 
 class LED():
@@ -20,10 +21,21 @@ class LED():
             self.off()
             time.sleep()
 
+#try            
+#it will not use callback            
 class Button():
-    def __init__(self):
-        pass
-
+    def __init__(self, pin):
+        self.button = digitalio.DigitalInOut(mymapping[pin-1])
+        self.button.direction = digitalio.Direction.INPUT
+        self.button.pull = digitalio.Pull.DOWN    
+    def when_pressed(self):
+        while not self.button.value:
+            time.sleep(0.5)
+    def if_pressed(self):
+        return self.button.value
+    
+    
+    
 class RGB_LED():
     def __init__(self):
         pass   
