@@ -1,0 +1,13 @@
+from pelerine import LED, Button
+from time import sleep
+
+l = LED(1)
+b = Button(2)
+
+while True:
+    if b.is_pressed():
+        l.on()
+    else:
+        l.off()
+    sleep(0.1)
+    
