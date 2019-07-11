@@ -17,9 +17,9 @@ class LED():
     def blink(self):
         while True:
             self.on()
-            time.sleep()
+            time.sleep(1)
             self.off()
-            time.sleep()
+            time.sleep(1)
 
 #try            
 #it will not use callback            
@@ -31,7 +31,7 @@ class Button():
     def when_pressed(self):
         while not self.button.value:
             time.sleep(0.5)
-    def if_pressed(self):
+    def is_pressed(self):
         return self.button.value
     
     
