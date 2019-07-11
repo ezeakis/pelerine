@@ -23,16 +23,17 @@ class LED():
 
 #try            
 #it will not use callback            
+#it is UP, so everything is reversed
 class Button():
     def __init__(self, pin):
         self.button = digitalio.DigitalInOut(mymapping[pin-1])
         self.button.direction = digitalio.Direction.INPUT
-        self.button.pull = digitalio.Pull.DOWN    
+        self.button.pull = digitalio.Pull.UP    
     def when_pressed(self):
-        while not self.button.value:
+        while self.button.value:
             time.sleep(0.5)
     def is_pressed(self):
-        return self.button.value
+        return not self.button.value
     
     
     
