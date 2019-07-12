@@ -41,13 +41,16 @@ class RGB_LED():
         pass   
 
 #High Level Servo Control
+#https://learn.adafruit.com/using-servos-with-circuitpython/high-level-servo-control
+#https://circuitpython.readthedocs.io/en/2.x/shared-bindings/pulseio/__init__.html
 #Before continuing make sure your board's lib folder has the adafruit_motor folder copied over.		
+#only servo
 #board.D5
 #min, mid, max?
 class Servo():
     def __init__(self, pin):
         import pulseio
-		import adafruit_motor.servo
+        import adafruit_motor.servo
         pwm = pulseio.PWMOut(pin, frequency=50)
         self.servo = adafruit_motor.servo.Servo(pwm, min_pulse=750, max_pulse=2250)
     def turn(angle):
