@@ -1,5 +1,6 @@
 # pelerine
 pelerine is a wrapper for circuit-python intended to behave just like gpiozero
+This is intended for educational purposes. It can be used for children who have just learnt to use gpiozero with RPi and need to proceed to microcontrollers with the same commands. This could evolve to circuitpython itself later.
 
 It is a fitting educational solution when a code club has just learnt how to program a Raspberry Pi to control devices through Python and gpiozero module and needs to move on to microcontrollers.
 
