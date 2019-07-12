@@ -21,7 +21,6 @@ class LED():
             self.off()
             time.sleep(1)
 
-#try            
 #it will not use callback            
 #it is UP, so everything is reversed
 class Button():
@@ -40,10 +39,19 @@ class Button():
 class RGB_LED():
     def __init__(self):
         pass   
-    
+
+#High Level Servo Control
+#Before continuing make sure your board's lib folder has the adafruit_motor folder copied over.		
+#board.D5
+#min, mid, max?
 class Servo():
-    def __init__(self):
-        pass    
+    def __init__(self, pin):
+        import pulseio
+		import adafruit_motor.servo
+        pwm = pulseio.PWMOut(pin, frequency=50)
+        self.servo = adafruit_motor.servo.Servo(pwm, min_pulse=750, max_pulse=2250)
+    def turn(angle):
+        self.servo.angle = angle
     
 class Distance_Sensor():
     def __init__(self):
