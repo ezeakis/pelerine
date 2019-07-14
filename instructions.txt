@@ -1,0 +1,6 @@
+Mu editor should be installed on your PC
+
+When you connect your device (eg Trinket M0), you copy file pelerine.py in folder "lib"
+
+You can copy one of the examples in file code.py
+Or you can open REPL and type the commands of the examples
