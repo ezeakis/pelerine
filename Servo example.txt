@@ -1,0 +1,5 @@
+from pelerine import Servo
+s = Servo(2)
+s.turn(90)
+s.turn(180)
+s.turn(0)
