@@ -1,15 +1,9 @@
 # pelerine
 pelerine is a wrapper for circuit-python intended to behave just like gpiozero
-This is created for educational purposes. It can be used for children who have just learnt to use gpiozero with RPi and need to proceed to microcontrollers with the same commands. This could evolve to circuitpython itself later.
+
+It is created for educational purposes. It can be used for children who have just learnt to use gpiozero with RPi and need to proceed to microcontrollers with the same commands.
 
 The same commands format just like gpiozero is used but circuitpython is executed under the hood.
 
-gpiozero and circuitpython have not been combined until now because there are some differences.
-
-gpiozero is very good at callbacks and threads which circuitpython cannot support.
-
-circuitpython handles I2C, SPI etc interfaces very well.
-
-So I needed a partial gpiozero-type wrapper to use for my lessons.
-
-And of course I share it to everyone that needs to use it as well.
+If you need an introduction to Adafruit Trinket M0 (a microcontroller that uses circuitpython) and Mu Editor, you may check this link, when I first tried this concept.
+https://coyote.edu.gr/en/introduction_to_trinket_m0-2/
