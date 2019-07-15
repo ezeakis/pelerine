@@ -35,7 +35,7 @@ class Button():
         return not self.button.value
 
 
-
+#to be added in the future
 class RGB_LED():
     def __init__(self):
         pass
@@ -43,10 +43,10 @@ class RGB_LED():
 #High Level Servo Control
 #https://learn.adafruit.com/using-servos-with-circuitpython/high-level-servo-control
 #https://circuitpython.readthedocs.io/en/2.x/shared-bindings/pulseio/__init__.html
-#Before continuing make sure your board's lib folder has the adafruit_motor folder copied over.		
-#only servo
-#board.D5
-#min, mid, max?
+#Before continuing make sure your board's lib folder has the adafruit_motor folder copied.		
+#if there is capacity issue, copy only servo part
+#board.D5 is used in original tutorial, I use board.D2 in my example
+#in gpiozero there were min, mid, max methods, not sure If they are needed to be recreated here
 class Servo():
     def __init__(self, pin):
         import pulseio
@@ -56,14 +56,17 @@ class Servo():
     def turn(self, angle):
         self.servo.angle = angle
 
+#to be added in the future
 class Distance_Sensor():
     def __init__(self):
         pass
 
+#to be added in the future
 class Gas_Sensor():
     def __init__(self):
         pass
 
+#to be added in the future
 class Buzzer():
     def __init__(self):
         pass
